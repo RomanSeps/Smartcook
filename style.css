@@ -1,330 +1,120 @@
-h1{
-     float: left;
-     display: inline;
-     margin-right: 75%;
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 .header{
-     overflow: hidden;;
-}
-
- a:hover{
-     cursor: pointer;
- }
- 
- .cards{
-     margin: 10px;
-     width: 400px;
-     height: 200px;
-     border: 3px solid black;
-     position: relative;
-     margin-top: -30%;
-      
- }
-
- .cards:hover{
-    
-    box-shadow: 2px 2px 5px rgb(87, 88, 92);
- }
- 
- h3{
-     margin: auto;
-     text-align: center;
-     font-size: 24px;
- }
- 
- #idk{
-     visibility: hidden;
- }
- 
- .cards1{
-     width: 400px;
-     height: 200px;
-     border: 3px solid black;
-     display: inline-block;
-     margin: 10px;
-     position: relative;
-     
- }
- 
- .container{
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-     align-items: center;
-     
- }
- 
- .container1{
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-     align-items: center;
-     
- }
- 
- .label{
-     display: none;
-     font-weight: 500;
-     color: rgb(0, 0, 0);
- }
-
- .label1{
-     display: none;
-     font-weight: 500;
- }
-
- .label2{
-     display: none;
-     font-weight: 500;
- }
-
- .label3{
-    display: none;
-    font-weight: 500;
-}
-
-.label4{
-    display: none;
-    font-weight: 500;
-}
- 
- body{
-     background-color: rgb(255, 255, 255);
- }
-
- .mb{
-     float: right;
-     margin: 15px;
-     border: none;
-     background: none;
-     color: black;
-     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
- }
-
-
-
- .mb:hover{
-     color: rgb(20, 176, 223);
-     cursor: pointer;
- }
-
- .b-container{
-     display: inline-block;
-     justify-content: right;
-     align-items: right;
-     margin-top: 1%;
- }
-
-#type1{
-    position: relative;
-}
-
-.br1{
-    display: none;
-}
-
-.img{
-    margin: auto;
-    display: inline;
-    justify-content: left;
-    align-items: center;
-    width: 88px;
-    height: 88px;
-    margin-left: 13px;
-    margin-top: 5%;
-}
-
-.p1{
-    display: inline-block;
-    width: 130px;
-    margin-left: 13%;
-    
-}
-
-.card-container{
     display: inline;
 }
 
-.a1:hover{
+.h-btn{
+    display: inline;
+    float: right;
+    border: none;
+    background: none;
+    padding: 10px;
+
+}
+
+.h-btn:hover{
     cursor: pointer;
-    
+    color: aqua;
 }
 
-footer{
-    background-color: rgb(26, 25, 25);
-    height: 200px;
-    
-    margin-top: 55px;
-    
+h1{
+    display: inline; 
 }
+
+h1:hover{
+    cursor: pointer;
+}
+
+.m-btn{
+    background: none;
+    border: 2px solid aqua;
+    width: 88px;
+    height: 40px;
+    display: inline-block;
+    margin: 5px;
+}
+
+.m-btn:hover{
+    cursor: pointer;
+
+}
+
+.labels1{
+    display: none;
+}
+
+.labels2{
+    display: none;
+}
+
+.labels3{
+    display: none;
+}
+
+.labels4{
+    display: none;
+}
+
+.labels5{
+    display: none;
+}
+
+.cards{
+    width: 400px;
+    height: 250px;
+    border: 3px solid black;
+}
+
+.cards:hover{
+    box-shadow: 2px 2px 7px 0px gray;
+    cursor: pointer;
+}
+
+.container{
+    margin-top: 5%;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 430px);
+    gap: 50px;
+}
+
+@media screen and (max-width: 1405px) {
+    .container{
+    grid-template-columns: repeat(2, 430px);
+    gap: 50px;
+    }
+}
+
+@media screen and (max-width: 902px) {
+    .container{
+    grid-template-columns: repeat(1, 430px);
+    gap: 50px;
+    }
+}
+
+
+h2{
+    text-align: center;
+}
+
+.idk{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(241, 241, 241);
+}
+
 
 .checkboxes{
-    position: absolute;
+    background-color: rgb(241, 241, 241);
+
 }
 
-#btn{
-    border: none;
-    background: none;
-    width: 140px;
-    height: 40px;
-    position: relative;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-}
-
-#btn1{
-    border: none;
-    background: none;
-    width: 140px;
-    height: 40px;
-    position: relative;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-}
-
-#btn2{
-    border: none;
-    background: none;
-    width: 140px;
-    height: 40px;
-    position: relative;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-}
-
-#btn3{
-    border: none;
-    background: none;
-    width: 140px;
-    height: 40px;
-    position: relative;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-}
-
-#btn4{
-    border: none;
-    background: none;
-    width: 140px;
-    height: 40px;
-    position: relative;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-}
-
-#btn:hover{
-    cursor: pointer;
-    color: rgb(20, 176, 223);
-}
-
-#btn1:hover{
-    cursor: pointer;
-    color: rgb(20, 176, 223);
-}
-
-#btn2:hover{
-    cursor: pointer;
-    color: rgb(20, 176, 223);
-}
-
-#btn3:hover{
-    cursor: pointer;
-    color: rgb(20, 176, 223);
-}
-
-#btn4:hover{
-    cursor: pointer;
-    color: rgb(20, 176, 223);
-}
-
-.cards1:hover{
-    box-shadow: 2px 2px 5px rgb(87, 88, 92);
- }
-
-.price{
-
-    color: rgb(54, 223, 20);
-    display: inline;
-    
-    margin-right: 3%;
-}
-
-.difficulty1{
-
-    color: rgb(54, 223, 20);
-    display: inline;
-    margin-right: 3%;
-}
-
-.duration{
-    color: rgb(54, 223, 20);
-    display: inline;
-    margin-right: 3%;
-}
-
-.stats-container{
-    display: inline;
-    justify-content: center;
-    align-items: center;
-    margin-left: 10%;
-}
-
-.stats-container1{
-    display: inline;
-    justify-content: center;
-    align-items: center;
-    margin-left: 17%;
-}
-
-.lable:checked{
-    accent-color: rgb(20, 176, 223);
-}
-
-.lable:checked ~ label{
-    color: rgb(20, 176, 223);
-}
-
-body{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.m-button{
-    margin: auto;
-    border: 3px solid black;
-    width: 90px;
-    height: 40px;
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 17px;
-    justify-content: center;
-    margin-left: 48%;
-    background: none;
-}
-
-.m-button:hover{
-    cursor: pointer;
-    color: rgb(20, 176, 223);
-}
-
-.TfICare{
-    justify-content: center;
-    align-items: center;
-}
-
-.p-footer{
-    color: white;
-    margin-left: 30px;
-    width: 80px;
-}
-
-.p-footer:hover{
-    color: rgb(185, 185, 185);
-    
-}
-
-h4{
-    font-size: 24px;
-    color: white;
-    margin-left: 30px;
-    
-}
-
-u{
-    color: white;
+.marquee{
+    border:2px solid black;
 }
