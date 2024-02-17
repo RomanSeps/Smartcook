@@ -2,277 +2,108 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smartcook</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <div class="header">
-        <a class="a1">
     <h1>Smartcook</h1>
-        </a>
-    <div class="b-container">
-        <button class="mb">About us</button>
-        <button class="mb">Recipes</button>
-        <button class="mb">Home</button>
+    <button class="h-btn">Home</button>
+    <button class="h-btn">About us</button>
+    <button class="h-btn">Recipes</button>
     </div>
-    </div>
-    
     <hr>
 
-    <button id="btn" onclick="demo()">+ Dish category</button>
-    <br>
-    <div id="type1">
-        
-        <div class="checkboxes">
-    <input class="label" type="checkbox" id="1" value="breakfast">
-    <label class="label" for="1" id="1" >Breakfast</label>
-        <br class="br1">
-    <input class="label" type="checkbox" id="2" value="lunch">
-    <label class="label" for="2" id="2" >lunch</label>
-        <br class="br1">
-    <input class="label" type="checkbox" id="3" value="dinner">
-    <label class="label" for="3" id="3" >dinner</label>
-        <br class="br1">
-    <input class="label" type="checkbox" id="4" value="snack">
-    <label class="label" for="4" id="4" >snack</label>
-    <br class="br1">
-        </div>  
-        
-    
-        
-    
 
-    <button id="btn1" onclick="demo1()">+ Recipe category</button>
-    <br>
-        <div class="checkboxes">
-    <input class="label1" type="checkbox" id="5" value="soup">
-    <label class="label1" for="5" id="5" >soup</label>
-    <br class="br1">
-    <input class="label1" type="checkbox" id="6" value="meat">
-    <label class="label1" for="6" id="6" >meat</label>
-    <br class="br1">
-    <input class="label1" type="checkbox" id="7"value="meat free">
-    <label class="label1" for="7" id="7">meat free</label>
-    <br class="br1">
-    <input class="label1" type="checkbox" id="8" value="dessert">
-    <label class="label1" for="8" id="8">dessert</label>
-    <br class="br1">
-    <input class="label1" type="checkbox" id="9" value="sauce">
-    <label class="label1" for="9" id="9">sauce</label>
-    <br class="br1">
-    <input class="label1" type="checkbox" id="10" value="pasta">
-    <label class="label1" for="10" id="10">pasta</label>
-    <br class="br1">
-    <input class="label1" type="checkbox" id="11" value="salad">
-    <label class="label1" for="11" id="11">salad</label>
-    <br class="br1"> 
-    <input class="label1" type="checkbox" id="12" value="sweet food">
-    <label class="label1" for="12" id="12">sweet food</label>
-    <br class="br1">
-    <input class="label1" type="checkbox" id="13" value="drink">
-    <label class="label1" for="13" id="13">drink</label>
-    <br class="br1">
-        </div>
+    <div class="idk">
 
+    <button class="m-btn" id="dish" onclick="demo1()">Dish category</button>
 
+    <button class="m-btn" id="recipe" onclick="demo2()">Recipe category</button>
 
-    <button id="btn2" onclick="demo2()">+ Difficulty</button>
-    <br>
-    
-        <div class="checkboxes">
-    <input class="label2" type="checkbox" id="14" value="simple">
-    <label class="label2" for="14" id="14">Simple</label>
-    <br class="br1">
-    <input class="label2" type="checkbox" id="15" value="d-medium">
-    <label class="label2" for="15" id="15">Medium</label>
-    <br class="br1">
-    <input class="label2" type="checkbox" id="16" value="difficult">
-    <label class="label2" for="16" id="16">difficult</label>
-        </div>
-    
+    <button class="m-btn" id="difficulty" onclick="demo3()">Difficulty</button>
 
-    <button id="btn3" onclick="demo3()">+ Price</button>
-    <br>
-    
-        <div class="checkboxes">
-    <input class="label3" type="checkbox" id="17" value="cheap">
-    <label class="label3" for="17" id="17">Cheap</label>
-    <br class="br1">
-    <input class="label3" type="checkbox" id="18" value="p-medium">
-    <label class="label3" for="18" id="18">Medium</label>
-    <br class="br1">
-    <input class="label3" type="checkbox" id="19" value="expensive">
-    <label class="label3" for="19" id="19">Expensive</label>
-        </div>
+    <button class="m-btn" id="price" onclick="demo4()">Price</button>
 
-        <button id="btn4" onclick="demo4()">+ Tolerance</button>
-        <br>
-        <div class="checkboxes">
-    <input class="label4" type="checkbox" id="20" value="vegetarian">
-    <label class="label4" for="20" id="20" >vegetarian</label>
-    <br class="br1">
-    <input class="label4" type="checkbox" id="21" value="vegan">
-    <label class="label4" for="21" id="21" >vegan</label>
-    <br class="br1">
-    <input class="label4" type="checkbox" id="22"value="nuts">
-    <label class="label4" for="22" id="22">nuts</label>
-    <br class="br1">
-    <input class="label4" type="checkbox" id="23" value="gluten">
-    <label class="label4" for="23" id="23">gluten</label>
-    <br class="br1">
-    <input class="label4" type="checkbox" id="24" value="lactose">
-    <label class="label4" for="24" id="24">lactose</label>
-    <br class="br1">
-    <input class="label4" type="checkbox" id="25" value="spicy">
-    <label class="label4" for="25" id="25">spicy</label>
-    <br class="br1">
-    <input class="label4" type="checkbox" id="26" value="alcohol">
-    <label class="label4" for="26" id="26">alcohol</label>
-    <br class="br1"> 
-    <input class="label4" type="checkbox" id="27" value="sea food">
-    <label class="label4" for="27" id="27">sea food</label>
-    <br class="br1">
-    <input class="label4" type="checkbox" id="28" value="mushrooms">
-    <label class="label4" for="28" id="28">mushrooms</label>
-    <br class="br1">
-        </div>
-    <!--<button class="submit-b" type="submit">Search</button>-->
-        <div class="TfICare">
-        <div class="container">
-
-            <a class="a1">
-            <div class="cards" id="card1">
-                <h3>
-                    Classic Scrambled Eggs
-                </h3>
-                <div class="card-container">
-                <img class="img" src="">
-                <p class="p1">A simple and delicious breakfast option.</p>
-                </div>
-
-                <br>
-
-                <div class="stats-container">
-                    <p class="price">Price: $</p>
-                    <p class="difficulty1">Difficulty: Simple</p>
-                    <p class="duration">Duration: 10 min.</p>
-                </div>
-
-            </div>
-            </a>
-    
-            <a class="a1">
-            <div class="cards" id="card2">
-                <h3>
-                    Minestrone Soup
-                </h3>
-                <div class="card-container">
-                <img class="img" src="">
-                <p class="p1">A hearty and nutritious vegetable soup.</p>
-                </div>
-
-                <div class="stats-container1">
-                    <p class="price">Price: $$</p>
-                    <p class="difficulty1">Difficulty: Medium</p>
-                    <p class="duration">Duration: 30 min.</p>
-                </div>
-
-            </div>
-            </a>
-    
-            <a class="a1">
-            <div class="cards" id="card3">
-                <h3>
-                    Chicken Alfredo Pasta
-                </h3>
-                <div class="card-container">
-                <img class="img" src="">
-                <p class="p1">A creamy and indulgent pasta dish.</p>
-                </div>
-
-                <div class="stats-container1">
-                    <p class="price">Price: $$</p>
-                    <p class="difficulty1">Difficulty: Medium</p>
-                    <p class="duration">Duration: 45 min.</p>
-                </div>
-
-            </div>
-            </a>
-        </div>
-
-        <div class="container1">
-    
-            <a class="a1">
-            <div class="cards1" id="cards">
-                <h3>
-                    Chocolate Lava Cake
-                </h3>
-                <div class="card-container">
-                    <img class="img" src="">
-                    <p class="p1">A decadent dessert with a gooey chocolate center.</p>
-                    </div>
-    
-                    <div class="stats-container1">
-                        <p class="price">Price: $</p>
-                        <p class="difficulty1">Difficulty: Medium</p>
-                        <p class="duration">Duration: 25 min.</p>
-                    </div>
-            </div>
-            </a>
-    
-            <a class="a1">
-            <div class="cards1" id="cards">
-                <h3>
-                    Grilled Salmon with Lemon and Dill
-                </h3>
-                <div class="card-container">
-                    <img class="img" src="">
-                    <p class="p1">A healthy and flavorful dinner option.</p>
-                    </div>
-    
-                    <div class="stats-container1">
-                        <p class="price">Price: $$</p>
-                        <p class="difficulty1">Difficulty: Medium</p>
-                        <p class="duration">Duration: 20 min.</p>
-                    </div>
-            </div>
-            </a>
-    
-            <a class="a1">
-            <div class="cards1" id="cards">
-                <h3>
-                    Recipe 6
-                </h3>
-                <div class="card-container">
-                    <img class="img" src="">
-                    <p class="p1">Lorem ipsum sic vita est.</p>
-                    </div>
-    
-                    <div class="stats-container1">
-                        <p class="price">Price: $</p>
-                        <p class="difficulty1">Difficulty: Simple</p>
-                        <p class="duration">Duration: 10 min.</p>
-                    </div>
-            </div>
-            </a>
-        </div>
-
-        <button class="m-button">More</button>
-        </div>
+    <button class="m-btn" id="tolerance" onclick="demo5()">Tolerance</button>
     </div>
-    <script src="script.js"></script>
-    <footer>
-        <div>
-        <h4>Smartcook</h4>
-        
-            <a href="https://www.facebook.com/skolavdf"><u><p class="p-footer">Facebook</p></u></a>
-            <a href="https://www.instagram.com/skolavdf/"><u><p class="p-footer">Instagram</p></u></a>
-            <a href="https://www.skolavdf.cz"><u><p class="p-footer">skolavdf.cz</p></u></a>
+        <div class="checkboxes">
+        <input class="labels1" type="checkbox" id="1" value="breakfast">
+        <label class="labels1" for="1" id="1" >Breakfast</label>
+        <input class="labels1" type="checkbox" id="2" value="lunch">
+        <label class="labels1" for="2" id="2" >lunch</label>
+        <input class="labels1" type="checkbox" id="3" value="dinner">
+        <label class="labels1" for="3" id="3" >dinner</label>
+        <input class="labels1" type="checkbox" id="4" value="snack">
+        <label class="labels1" for="4" id="4" >snack</label>
         </div>
-    </footer>
- 
+
+        <div class="checkboxes">
+            <input class="labels2" type="checkbox" id="5" value="soup">
+            <label class="labels2" for="5" id="5" >soup</label>
+            <input class="labels2" type="checkbox" id="6" value="meat">
+            <label class="labels2" for="6" id="6" >meat</label>
+            <input class="labels2" type="checkbox" id="7"value="meat free">
+            <label class="labels2" for="7" id="7">meat free</label>
+            <input class="labels2" type="checkbox" id="8" value="dessert">
+            <label class="labels2" for="8" id="8">dessert</label>
+            <input class="labels2" type="checkbox" id="9" value="sauce">
+            <label class="labels2" for="9" id="9">sauce</label>
+            <input class="labels2" type="checkbox" id="10" value="pasta">
+            <label class="labels2" for="10" id="10">pasta</label>
+            <input class="labels2" type="checkbox" id="11" value="salad">
+            <label class="labels2" for="11" id="11">salad</label> 
+            <input class="labels2" type="checkbox" id="12" value="sweet food">
+            <label class="labels2" for="12" id="12">sweet food</label>
+            <input class="labels2" type="checkbox" id="13" value="drink">
+            <label class="labels2" for="13" id="13">drink</label>
+                </div>
+
+        <div class="checkboxes">
+            <input class="labels3" type="checkbox" id="14" value="simple">
+            <label class="labels3" for="14" id="14">Simple</label>
+            <input class="labels3" type="checkbox" id="15" value="d-medium">
+            <label class="labels3" for="15" id="15">Medium</label>
+            <input class="labels3" type="checkbox" id="16" value="difficult">
+            <label class="labels3" for="16" id="16">difficult</label>
+        </div>
+
+        <div class="checkboxes">
+            <input class="labels4" type="checkbox" id="17" value="cheap">
+            <label class="labels4" for="17" id="17">Cheap</label>
+            <input class="labels4" type="checkbox" id="18" value="p-medium">
+            <label class="labels4" for="18" id="18">Medium</label>
+            <input class="labels4" type="checkbox" id="19" value="expensive">
+            <label class="labels4" for="19" id="19">Expensive</label>
+                </div>
+
+        <div class="checkboxes">
+            <input class="labels5" type="checkbox" id="20" value="vegetarian">
+            <label class="labels5" for="20" id="20" >vegetarian</label>
+            <input class="labels5" type="checkbox" id="21" value="vegan">
+            <label class="labels5" for="21" id="21" >vegan</label>
+            <input class="labels5" type="checkbox" id="22"value="nuts">
+            <label class="labels5" for="22" id="22">nuts</label>
+            <input class="labels5" type="checkbox" id="23" value="gluten">
+            <label class="labels5" for="23" id="23">gluten</label>
+            <input class="labels5" type="checkbox" id="24" value="lactose">
+            <label class="labels5" for="24" id="24">lactose</label>
+            <input class="labels5" type="checkbox" id="25" value="spicy">
+            <label class="labels5" for="25" id="25">spicy</label>
+            <input class="labels5" type="checkbox" id="26" value="alcohol">
+            <label class="labels5" for="26" id="26">alcohol</label> 
+            <input class="labels5" type="checkbox" id="27" value="sea food">
+            <label class="labels5" for="27" id="27">sea food</label>
+            <input class="labels5" type="checkbox" id="28" value="mushrooms">
+            <label class="labels5" for="28" id="28">mushrooms</label>
+        </div>
+
+        <div id="card-container" class="container"> 
+            
+        </div>
+    
+
+    <script src="script.js"></script>
 </body>
 </html>
