@@ -1,13 +1,12 @@
-body{
+body{ /* Tělo (Pouze pro font) */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
 }
 
-.header{
+.header{ /* Horní část stránky, jiný název mě nenapadl :D */
     display: inline;
 }
 
-.h-btn{
+.h-btn{ /* Tlačítka 1 */
     display: inline;
     float: right;
     border: none;
@@ -16,65 +15,66 @@ body{
 
 }
 
-.h-btn:hover{
+.h-btn:hover{ /* Hover efekt tlačítek 1 */
     cursor: pointer;
-    color: aqua;
+    color: gray;
 }
 
-h1{
+h1{ /* Nadpis "Smartcook" */
     display: inline; 
 }
 
-h1:hover{
+h1:hover{ /* Hover efekt nadpisu "Smartcook" */
     cursor: pointer;
 }
 
-.m-btn{
+.m-btn{ /* Tlačítka 2 */
     background: none;
-    border: 2px solid aqua;
+    border: 2px solid black;
     width: 88px;
     height: 40px;
-    display: inline-block;
+    display: inline;
     margin: 5px;
 }
 
-.m-btn:hover{
+.m-btn:hover{ /* Hover efekt tlačítek 2 */
     cursor: pointer;
-
+    color: rgb(190, 190, 190);
 }
+  
 
-.labels1{
+.labels1{ /* Boxy pro filtrování */
     display: none;
 }
 
-.labels2{
+.labels2{ /* Boxy pro filtrování */
     display: none;
 }
 
-.labels3{
+.labels3{ /* Boxy pro filtrování */
     display: none;
 }
 
-.labels4{
+.labels4{ /* Boxy pro filtrování */
     display: none;
 }
 
-.labels5{
+.labels5{ /* Boxy pro filtrování */
     display: none;
 }
 
-.cards{
+.cards{ /* Vzhled karet s recepty */
     width: 400px;
     height: 250px;
     border: 3px solid black;
 }
 
-.cards:hover{
+.cards:hover{ /* Hover efekt karet s recepty */
     box-shadow: 2px 2px 7px 0px gray;
     cursor: pointer;
 }
 
-.container{
+.container{ /* Website jawline */
     margin-top: 5%;
     align-items: center;
     justify-content: center;
@@ -83,38 +83,40 @@ h1:hover{
     gap: 50px;
 }
 
-@media screen and (max-width: 1405px) {
+@media screen and (max-width: 1405px) { /* RESPONZIVITA */
     .container{
     grid-template-columns: repeat(2, 430px);
     gap: 50px;
     }
 }
 
-@media screen and (max-width: 902px) {
+@media screen and (max-width: 902px) { /* RESPONZIVITA */
     .container{
     grid-template-columns: repeat(1, 430px);
     gap: 50px;
     }
 }
 
-
-h2{
+h2{ /* Nadpis jednotlivých receptů */
     text-align: center;
 }
 
-.idk{
+.idk{ /* Tlačítka 2 */
     text-align: center;
     justify-content: center;
     align-items: center;
     background-color: rgb(241, 241, 241);
+    display: flex;
 }
 
 
-.checkboxes{
+.checkboxes{ /* Pozadí boxů */
     background-color: rgb(241, 241, 241);
-
 }
 
-.marquee{
-    border:2px solid black;
+.text{ /* Parametry receptů */
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
