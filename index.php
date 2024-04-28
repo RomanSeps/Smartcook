@@ -15,6 +15,18 @@
     </div>
     <hr>        <!-- Designová čára -->
 
+    <div class="welcome">
+        <div class="list">
+            <h2>Welcome to Smartcook!</h2>
+            <p class="welcome-p">Are you hungry and don't know what to cook?<br> Well, we got you covered!<br> 
+                With our wide range of recipes, you will never find yourself running out of ideas on what to cook!<br>
+                It's super simple just pick anything that sounds / looks interesting, click on it and you can start cooking!<br>
+                It's free, simple and easy to use! Start using Smartcook today!
+            </p>
+            <a href=""><button class="w-btn">About us</button></a>
+        </div>
+    </div>
+
 
     <div class="idk">
     <button class="m-btn" id="dish" onclick="demo1()">Dish category</button>
@@ -96,8 +108,44 @@
         </div>
 
         <div id="card-container" class="container">         <!-- Div pro zarovnání receptů -->
-            
+        <?php 
+
+                require_once("SmartCookClient.php");
+
+                $request_data = [
+                    "attributes" => ["id", "name", "author", "difficulty", "price"],
+                    "filter" => [
+                    ]
+                ];
+
+                try {
+                    $data = (new SmartCookClient)
+                        ->setRequestData($request_data)
+                        ->sendRequest("recipes")
+                        ->getResponseData();
+                } catch (Exception $e) {
+                    echo $e->getMessage();
+                } 
+
+                foreach($data["data"] as $key => $value) {
+                    echo "<div class='cards' onclick='blackout()'> 
+                                    <h2>".$value["name"]."</h2>
+                                    <div class='inner-container'>
+                                        <p class='text'>". "Difficulty: ".$value["difficulty"]."<br>
+                                                            Price: ".$value["price"]."</p>
+                                        <img class='image'>
+                                    </div>
+                        </div>";
+                }
+        ?>
         </div>
+
+        <footer>
+            <h3>SMARTCOOK</h3>
+            <a href=""><p class="p-footer">Facebook</p></a>
+            <a href="https://www.skolavdf.cz"><p class="p-footer">SkolaVDF</p></a>
+            <p class="p-footer">© All rights reserved</p>
+        </footer>
     
 
     <script src="script.js"></script>
