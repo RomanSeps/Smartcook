@@ -2,6 +2,47 @@ body{ /* Tělo (Pouze pro font) */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+footer{
+    background-color: black;
+    width:100%;
+    height:20%; 
+    position:absolute;
+    left:0;
+    margin-top: 5%;
+}
+
+.welcome{
+    margin: auto;
+    width: 1000px;
+    height: 500px;
+    border: 3px solid black;
+    background-color: rgb(190, 190, 190);
+    /*background: url("rachel-park-hrlvr2ZlUNk-unsplash.jpg");
+    background-size: 100% 600px;                                        Pro pozdější využití 
+    background-size: contain; */
+    text-align: center;
+    align-items: center;
+}
+
+.welcome-p{
+    margin: auto;
+    text-align: center;
+    width: 500px;
+    margin-top: 7%;
+}
+
+.list{
+    margin: auto;
+    width: 600px;
+    height: 350px;
+    background-color: white;
+    border: 3px solid black;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 7%;
+}
+
 .header{ /* Horní část stránky, jiný název mě nenapadl :D */
     display: inline;
 }
@@ -24,6 +65,15 @@ h1{ /* Nadpis "Smartcook" */
     display: inline; 
 }
 
+h2{ /* Nadpis jednotlivých receptů */
+    text-align: center;
+}
+
+h3{
+    color: white;
+    margin-left: 20%;
+}
+
 h1:hover{ /* Hover efekt nadpisu "Smartcook" */
     cursor: pointer;
 }
@@ -37,7 +87,21 @@ h1:hover{ /* Hover efekt nadpisu "Smartcook" */
     margin: 5px;
 }
 
+.w-btn{
+    background: none;
+    border: 2px solid black;
+    width: 88px;
+    height: 40px;
+    margin: 5px;
+    margin-top: 3%;
+}
+
 .m-btn:hover{ /* Hover efekt tlačítek 2 */
+    cursor: pointer;
+    color: rgb(190, 190, 190);
+}
+
+.w-btn:hover{
     cursor: pointer;
     color: rgb(190, 190, 190);
 }
@@ -83,10 +147,32 @@ h1:hover{ /* Hover efekt nadpisu "Smartcook" */
     gap: 50px;
 }
 
+.inner-container{
+    margin-top: 5%;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    gap: 10px;
+}
+
 @media screen and (max-width: 1405px) { /* RESPONZIVITA */
     .container{
     grid-template-columns: repeat(2, 430px);
     gap: 50px;
+    }
+}
+
+@media screen and (max-width: 1028px) { /* RESPONZIVITA */
+    .welcome{
+        width: 700px;
+    }
+    .list{
+        width: 550px;
+        margin-top: 11%;
+    }
+    .welcome-p{
+        width: 530px;
     }
 }
 
@@ -95,11 +181,18 @@ h1:hover{ /* Hover efekt nadpisu "Smartcook" */
     grid-template-columns: repeat(1, 430px);
     gap: 50px;
     }
+    .welcome{
+        width: 500px;
+    }
+    .list{
+        width: 400px;
+        margin-top: 13%;
+    }
+    .welcome-p{
+        width: 380px;
+    }
 }
 
-h2{ /* Nadpis jednotlivých receptů */
-    text-align: center;
-}
 
 .idk{ /* Tlačítka 2 */
     text-align: center;
@@ -107,6 +200,7 @@ h2{ /* Nadpis jednotlivých receptů */
     align-items: center;
     background-color: rgb(241, 241, 241);
     display: flex;
+    margin-top: 1%;
 }
 
 
@@ -116,7 +210,27 @@ h2{ /* Nadpis jednotlivých receptů */
 
 .text{ /* Parametry receptů */
     margin: auto;
-    align-items: center;
-    justify-content: center;
+    text-align: left;
+}
+
+.image{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+}
+
+.p-footer{
+    color: white;
+    margin-left: 20%;
+}
+
+.about{
+    margin-top: 2%;
+    width: 500px;
     text-align: center;
+    margin: auto;
+}
+
+.line1{
+    width: 1000px;
 }
